@@ -1,3 +1,7 @@
-# A really bad IP Monitor 
+# on-ip-change
 
-Sends an e-mail whenever an IP changes (meant to be `cronjob`'d)
+If the script detects that first time being run, or that the IP changed since last time it was run, the script will eval's any commands you pass in as arguments.  Otherwise results in a noop.
+
+## Use
+
+`source on-ip-change.sh mail -s "$HOST IP changed to $IP" email@addr.com`
